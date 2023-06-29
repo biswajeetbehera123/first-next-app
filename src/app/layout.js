@@ -1,9 +1,10 @@
 import Navbar from '@/components/Navbar/Navbar'
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Inter, Poppins } from 'next/font/google'
 import Footer from '@/components/Footer/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
+const pop = Poppins({ subsets: ['latin'], weight: ['400'] })
 
 export const metadata = {
   title: 'First next App',
@@ -13,7 +14,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={pop.className}>
         <div className='container'>
           <Navbar />
           {children}

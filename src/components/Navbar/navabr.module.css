@@ -1,3 +1,38 @@
 .container{
-    
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.logo:hover{
+    opacity: 0.8;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.link:hover{
+    opacity: 0.8;
+}
+
+.logout{
+    padding: 5px;
+    border: none;
+    background-color: #53c28b;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}
+
+.logout:hover{
+    background-color: #45a977;
 }
